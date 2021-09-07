@@ -3,12 +3,40 @@
 numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
 
 # 1. Print out a list of the even integers:
+for number in numbers:
+    if number%2 == 0:
+        print(number)
 
 
 # 2. Print the difference between the largest and smallest value:
 
+# I know this isn't right as there is no way of iknowing that the number i initiated smallest with is smaller than an existing one in the list??
+
+smallest = 100
+largest = 0
+for number in numbers:
+    if number > largest:
+        largest = number
+    if number < smallest:
+        smallest = number
+
+print(smallest)
+print(largest)
+diff_in_nums = largest - smallest
+print(f'the difference between the largest and the smallest number in the list is {diff_in_nums}')
+
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
+
+#for number in numbers:
+    #if number == 2:
+index_num = numbers.index(2)
+
+print(index_num)
+        
+    # last = number
+
+    # print(last)
 
 
 # 4. Print the sum of the numbers, 
